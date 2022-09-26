@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sacramento", sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1{
+    /* color: #a756dd; */
+    animation: pulsate 0.11s ease-in-out infinite alternate;    
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    padding: 0.4em;
+    box-shadow: 0 0 .1rem #fff,
+                0 0 .1rem #fff,
+                0 0 1rem rgb(0, 132, 255),
+                0 0 0.4rem rgb(0, 132, 255),
+                0 0 1.4rem rgb(0, 132, 255),
+                inset 0 0 1.1rem #bc13fe;
+}
+
+main{
+    padding: 2rem 0;
+    height: 100%;
+    width: 100%;
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+
+}
+
+#counter{
+    font-size: 9rem;
+    color: #fff;
+    min-width: 20rem;
+    max-width: 90vw;
+    padding: 5rem;
+    height: 20rem;
+    background: black;
+    text-align: center;
+    border-radius: 15rem;
+    box-shadow: -3px -3px 10px rgb(0, 132, 255), 3px 3px 10px #bc13fe, inset 3px 3px 7px rgb(0, 132, 255), inset -3px -3px 7px #bc13fe;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+#counter::-webkit-scrollbar {
+    display: none;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    background: black;
+    margin: 10px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: -3px -3px 10px rgb(0, 132, 255), 3px 3px 10px #bc13fe, inset 3px 3px 7px rgb(0, 132, 255), inset -3px -3px 7px #bc13fe;
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+}
+button:active{
+    box-shadow: -3px -3px 10px #bc13fe, 3px 3px 10px rgb(0, 132, 255), inset 3px 3px 7px #bc13fe, inset -3px -3px 7px rgb(0, 132, 255);
+}
+
+.neonText {
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px rgb(0, 132, 255),
+      0 0 62px rgb(0, 132, 255),
+      0 0 72px rgb(0, 132, 255),
+      0 0 82px #bc13fe,
+      0 0 110px #bc13fe;
+  }
+
+@keyframes pulsate {
+    
+    100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px rgb(0, 132, 255),
+        0 0 40px rgb(0, 132, 255),
+        0 0 80px rgb(0, 132, 255),
+        0 0 90px rgb(0, 132, 255),
+        0 0 100px #bc13fe,
+        0 0 150px #bc13fe;
+    
+    }
+    
+    0% {
+  
+      text-shadow:
+      0 0 4px #fff,
+      0 0 10px #fff,
+      0 0 18px rgb(0, 132, 255),
+      0 0 38px rgb(0, 132, 255),
+      0 0 73px #bc13fe,
+      0 0 80px #bc13fe,
+      0 0 94px #bc13fe,
+      0 0 140px #bc13fe;
+  
+    }}   
