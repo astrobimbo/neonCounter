@@ -1,5 +1,5 @@
 # neonCounter
-This is a simply webapp deployed on Netlify at this link: https://6331aaf87aede019110b4c13--glittering-kleicha-b84bc8.netlify.app/
+This is a simply web-app deployed on Netlify at this link: https://6331aaf87aede019110b4c13--glittering-kleicha-b84bc8.netlify.app/
 
 It's a counter with 3 buttons to decrement, increment and reset the value.
 It's developed in Js, Html and Css.
